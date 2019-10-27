@@ -1,0 +1,30 @@
+{
+  "name": "node-red-contrib-mijia-filter",
+  "version": "1.0.0",
+  "description": "Xiomia Mijia BLE sensors broadcast service data filter. To be used in conjunction with node-red-contrib-ble-scan",
+  "author": {
+    "name": "Stephen Roe",
+    "email": "ste.roe@gmail.com"
+  },
+  "keywords": [
+    "ble",
+    "bluetooth",
+    "mijia",
+    "nodered",
+    "node-red",
+    "sensor",
+    "temperature",
+    "humidity",
+    "xiomi"
+  ],
+  "license": "MIT",
+  "node-red": {
+    "nodes": {
+      "mijia-filter": "mijia-filter.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sjroe/node-red-contrib-mijia-filter.git"
+  }
+}

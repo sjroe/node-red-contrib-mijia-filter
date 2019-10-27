@@ -1,0 +1,28 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Mijia BLE Filter',{
+        category: 'BLE',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "function.png",
+        label: function() {
+            return this.name||"Mijia BLE Filter";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="Mijia BLE Filter">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="Migia BLE Filter">
+    <p>Filters and extracts the sensor data of Mijia BLE devices obtained via node-red-contrib-ble-scan.</p>
+    <p>Parser derived from https://github.com/hannseman/homebridge-mi-hygrothermograph</p>
+    <p>Message payload contains the sensor mac address under address and sensor data items under data</p>
+</script>
